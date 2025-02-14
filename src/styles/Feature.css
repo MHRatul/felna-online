@@ -1,0 +1,107 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap');
+
+/* Feature Section Styling */
+.feature-section {
+  background-color: #f9f9f9;
+  padding: 100px 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Custom Container */
+.custom-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Section Title Styling */
+.why-choosing {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #28a745;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.big-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.feature-section p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Feature Box Styling */
+.feature-box {
+  background: #ffffff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 30px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  min-height: 250px;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 35px rgba(40, 167, 69, 0.3); /* Green glow */
+  border: 2px solid #28a745;
+  background: linear-gradient(135deg, #ffffff, #e8f5e9);
+}
+
+/* Feature Box Title */
+.feature-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 15px;
+}
+
+/* Feature Box Description */
+.feature-text {
+  font-size: 16px;
+  text-align: left;
+  align-items: center;
+  color: #222121;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Check Icon */
+.check-icon {
+  font-size: 35px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .big-title {
+    font-size: 32px;
+  }
+  .feature-box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-section {
+    padding: 60px 20px;
+  }
+  .big-title {
+    font-size: 28px;
+  }
+}

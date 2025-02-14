@@ -1,0 +1,33 @@
+/* Ensure the body and html take full height */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper for the content to allow flexible space */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes up the full screen height */
+}
+
+/* Main content area to fill remaining space */
+.content {
+  flex-grow: 1; /* This makes the content area fill the remaining space */
+  padding: 20px;
+}
+
+/* Footer styling */
+footer {
+  background: linear-gradient(to right, #ebfcec, #f1f1f1);
+  color: #000;
+  padding: 30px 0;
+  margin-top: auto; /* Push the footer to the bottom */
+  text-align: center;
+}
+
+/* General styling for icons */
+i {
+  font-size: 24px;
+}

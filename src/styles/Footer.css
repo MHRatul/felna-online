@@ -1,0 +1,64 @@
+/* Footer container */
+footer {
+    background: linear-gradient(to right, #ffffff, #fffbfb);
+    color: #000;
+    padding: 30px 0;
+    margin-top: 40px;
+    max-width: 1280px;
+    margin: auto;
+
+  }
+  
+  /* Max-width and alignment to match other sections */
+  footer .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  /* Ensure the footer sections are properly aligned */
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* Footer sections inside container */
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+  }
+  
+  .footer-social {
+    text-align: center;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 22px;
+  }
+  
+  .footer-social-icons a {
+    font-size: 22px;
+    color: #1e6cff;
+    transition: color 0.3s;
+  }
+  
+  .footer-social-icons a:hover {
+    color: #3845ff;
+  }
+  
+  /* Copyright Section */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff6f6;
+    padding: 10px 0;
+  }
+  

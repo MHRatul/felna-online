@@ -1,0 +1,77 @@
+/* StatsSection.css */
+.stats-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #e8fdf0, #f8e2df);
+    color: rgb(153, 29, 29);
+  }
+  
+  .stats-section .container {
+    width: 1080px; /* Increased width to 1280px */
+    margin: 0 auto; /* Centers the container */
+  }
+  
+  .stats-section .row {
+    display: flex;
+    justify-content: space-between; /* Adds space between the items */
+    align-items: center;
+    gap: 30px; /* Increased gap between the stat cards */
+    flex-wrap: nowrap; /* Prevents wrapping */
+  }
+  
+  .stat-card {
+    min-width: 292px; /* Increased minimum width of the stat card */
+    max-width: 350px; /* Increased maximum width of the stat card */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px; /* Increased padding */
+    background-color: white;
+    color: #020064;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stats-section .fs-1 {
+    font-size: 60px; /* Increased icon size */
+    margin-bottom: 15px;
+  }
+  
+  .stats-section h2 {
+    font-weight: bold;
+    font-size: 50px; /* Increased font size for count */
+  }
+  
+  .stats-section p {
+    font-weight: 600;
+    font-size: 22px; /* Increased font size for text */
+  }
+  
+  @media (max-width: 1280px) {
+    .stats-section .container {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .stats-section .container {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .stat-card {
+      min-width: 250px;
+      max-width: 300px; /* Slightly smaller box for mobile */
+    }
+  
+    /* Allow wrapping on small screens */
+    .stats-section .row {
+      flex-wrap: wrap;
+    }
+  }
+  
