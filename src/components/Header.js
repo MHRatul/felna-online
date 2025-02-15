@@ -16,6 +16,11 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Redirect to Google Login
+  const handleGoogleLogin = () => {
+    window.location.href = "http://localhost:5001/auth/google";  // Redirects to backend auth route
+  };
+
   return (
     <header className={isSticky ? "sticky-header" : ""}>
       {/* Top Bar */}
@@ -75,8 +80,12 @@ const Header = () => {
 
             {/* Login and Register Buttons */}
             <div className="auth-buttons">
-              <Button variant="btn btn-success" className="mx-2" href="/login">Login</Button>
-              <Button variant="danger" className="mx-2" href="/register">Register</Button>
+              <Button variant="btn btn-success" className="mx-2" onClick={handleGoogleLogin}>
+                Login
+              </Button>
+              <Button variant="danger" className="mx-2" href="/register">
+                Register
+              </Button>
             </div>
           </Navbar.Collapse>
         </Container>
